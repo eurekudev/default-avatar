@@ -16,8 +16,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Eureku\\Packages\\": "src",
-            "Eureku\\Packages\\Tests\\": "tests"
+            "Eureku\\Packages\\": "src"
         }
     },
     "extra": {
