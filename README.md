@@ -1,0 +1,1 @@
+# Paquete laravel para generar Imagnes de avatars

@@ -1,0 +1,38 @@
+{
+    "name": "eureku/default-avatar",
+    "description": "Paquete laravel para generar imágenes por defecto",
+    "keywords": [
+        "image",
+        "avatar",
+        "laravel"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luis  R. Wilson Herrera",
+            "email": "lrwilsonherrera@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Eureku\\Packages\\": "src",
+            "Eureku\\Packages\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Eureku\\Packages\\DefaultAvatarServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "require": {
+        "intervention/image": "^2.6"
+    }
+}
