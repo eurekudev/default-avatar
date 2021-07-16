@@ -6,7 +6,6 @@ use Intervention\Image\AbstractFont;
 use Intervention\Image\Image;
 use Intervention\Image\ImageManager;
 use Eureku\Packages\Utils\Initials;
-use Eureku\Packages\Utils\StringScript;
 
 class Avatar
 {
@@ -586,51 +585,6 @@ class Avatar
 
     protected function getFontByScript()
     {
-        // Arabic
-        if (StringScript::isArabic($this->getInitials())) {
-            return __DIR__ . '/../fonts/script/Noto-Arabic-Regular.ttf';
-        }
-
-        // Armenian
-        if (StringScript::isArmenian($this->getInitials())) {
-            return __DIR__ . '/../fonts/script/Noto-Armenian-Regular.ttf';
-        }
-
-        // Bengali
-        if (StringScript::isBengali($this->getInitials())) {
-            return __DIR__ . '/../fonts/script/Noto-Bengali-Regular.ttf';
-        }
-
-        // Georgian
-        if (StringScript::isGeorgian($this->getInitials())) {
-            return __DIR__ . '/../fonts/script/Noto-Georgian-Regular.ttf';
-        }
-
-        // Hebrew
-        if (StringScript::isHebrew($this->getInitials())) {
-            return __DIR__ . '/../fonts/script/Noto-Hebrew-Regular.ttf';
-        }
-
-        // Mongolian
-        if (StringScript::isMongolian($this->getInitials())) {
-            return __DIR__ . '/../fonts/script/Noto-Mongolian-Regular.ttf';
-        }
-
-        // Thai
-        if (StringScript::isThai($this->getInitials())) {
-            return __DIR__ . '/../fonts/script/Noto-Thai-Regular.ttf';
-        }
-
-        // Tibetan
-        if (StringScript::isTibetan($this->getInitials())) {
-            return __DIR__ . '/../fonts/script/Noto-Tibetan-Regular.ttf';
-        }
-
-        // Chinese & Japanese
-        if (StringScript::isJapanese($this->getInitials()) || StringScript::isChinese($this->getInitials())) {
-            return __DIR__ . '/../fonts/script/Noto-CJKJP-Regular.otf';
-        }
-
         return $this->getFontFile();
     }
 
