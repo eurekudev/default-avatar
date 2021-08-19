@@ -164,9 +164,9 @@ class Initials
             for ($i = 0; $i < $this->length; $i++) {
                 $index = $i;
 
-                if (($index === ($this->length - 1) && $index > 0) || ($index > (count($names) - 1))) {
-                    $index = count($names) - 1;
-                }
+                // if (($index === ($this->length - 1) && $index > 0) || ($index > (count($names) - 1))) {
+                //     $index = count($names) - 1;
+                // }
 
                 if ($assignedNames >= count($names)) {
                     $start++;
